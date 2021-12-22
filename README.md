@@ -1,16 +1,38 @@
 
 # Inferring Supenova dust with Neural Networks
 
-##Description
+## Description
 
-A trained neural network with simulated photometric data sets.
-We used the advanced, fully three-dimensional radiative transfer code, MOCASSIN to simulated ... SEDs. Then we conveleved photometric data sets using the JWST bandpass filters.
-The neural network is trained with three different photometric data sets defined in three different scenarios as follows:
-In the first scenario, S1, 
 
-In the second scenario, S2,
+Here is a designed neural network whose output models a normal distribution to estimate a target value.
+We produced a large set of simulated spectral energy distributions (SEDs) for a wide range of different supernova and dust properties using the advanced,
+fully three-dimensional radiative transfer code MOCASSIN. We then convolved each SED with the entire suite of James Web Space
+Telescope (JWST) bandpass filters to synthesise a photometric data set.
 
-In the third scenario, S3,
+
+
+To find out how accurately the neural network can predict the dust properties from the simulated data, we fabricate three different scenarios.
+
+
+First, in S1, we assuming a uniform distance of ∼ 0.43 Mpc for all simulated SEDs.
+
+Next, in S2, we uniformly distribute all simulated SEDs within a volume of 0.43–65 Mpc.
+
+Finally, in S3, we artificially add random noise corresponding to a photometric uncertainty of about 0.1 mag.
+
+We also applied a feature selection process using Shapley values, in each scenario to find the least number of JWST filters to be able to estimate supernova dust properties. Therefore, in each step different subsets aree used for training the neural network. In the figures bellow the corresponding filters in each step of the feature selection process are shown.
+
+In S1: ![S1 filters](https://user-images.githubusercontent.com/29614210/147156639-70dee60a-7c9e-4888-9890-fa2458a97a95.png)
+
+In S2: ![S2 filters](https://user-images.githubusercontent.com/29614210/147156716-a44f3e95-e628-4c9c-ab2e-d109ecbd24f7.png)
+
+In S3: ![s3_filters_iterations](https://user-images.githubusercontent.com/29614210/147156777-cc973599-506e-40fa-81ab-2ad2518b7c3c.png)
+
+
+
+For more details on the process of training and evaluation please see our paper here!
+
+
 
 
 ## Dependencies
@@ -23,12 +45,11 @@ Keras
 
 ## Usage
 
-1.By an optimal or a minimum given set of observed magnitudes with JWST filters as follows:
-Optimal:
-Minimum:
+1.By a given SED of a supernova in the format of a subset of JWST filters that is defined in our feature selection process and are shhown in the Figures above, the amount, temperature and the spcices of dust (only Carbon, Silicate, and a a mixture of Carbon and Silicate), with an estimated uncertainty for each value will be estimated that we apply a crietrion on to label a predicted value as reliable/unreliable.
 
+### Example
 
-The neural network that is trained in S3, can estimate the amount, temperature and the spcices of dust (only Carbon, Silicate, and a a mixture of Carbon and Silicate), with an estimated uncertainty for each value.
+As an example you may run '__init__predict_newSED.py' which estimates the dust properties for an example set of SEDs from the data set in our S3.
 
 
 
