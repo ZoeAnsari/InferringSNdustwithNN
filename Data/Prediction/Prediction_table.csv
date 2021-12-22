@@ -1,0 +1,6 @@
+,predicted_Md(Msun),predicted_sigma_Md(Msun),reliable_predicted_Md,predicted_Td(K),predicted_sigma_Td(K),reliable_predicted_Td,predicted_species,predicted_sigma_species,reliable_predicted_species
+0,0.0051099085,0.001630348,No,330.07343,31.823467,Yes,Mixed,0.12982452,Yes
+1,5.810708e-06,2.0402671e-05,No,320.2852,161.00784,No,noDust,0.94750243,No
+2,0.023309126,0.011819238,No,759.6452,147.06857,Yes,Carbon,0.15785998,Yes
+3,0.0008506112,0.00066839455,No,328.79636,36.921944,Yes,Mixed,0.16435999,Yes
+4,2.8779357e-05,2.8371811e-05,No,416.7979,114.837944,No,noDust,0.55176103,No
