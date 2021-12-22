@@ -22,15 +22,24 @@ Finally, in S3, we artificially add random noise corresponding to a photometric 
 
 We also applied a feature selection process using Shapley values, in each scenario to find the least number of JWST filters to be able to estimate supernova dust properties. Therefore, in each step different subsets aree used for training the neural network. In the figures bellow the corresponding filters in each step of the feature selection process are shown.
 
-In S1: ![S1 filters](https://user-images.githubusercontent.com/29614210/147156639-70dee60a-7c9e-4888-9890-fa2458a97a95.png)
-
-In S2: ![S2 filters](https://user-images.githubusercontent.com/29614210/147156716-a44f3e95-e628-4c9c-ab2e-d109ecbd24f7.png)
-
-In S3: ![s3_filters_iterations](https://user-images.githubusercontent.com/29614210/147156777-cc973599-506e-40fa-81ab-2ad2518b7c3c.png)
+S1:
+ 
+  <img src="https://user-images.githubusercontent.com/29614210/147156639-70dee60a-7c9e-4888-9890-fa2458a97a95.png" width="35%">
 
 
+S2: 
 
-For more details on the process of training and evaluation please see our paper here!
+<img src="https://user-images.githubusercontent.com/29614210/147156716-a44f3e95-e628-4c9c-ab2e-d109ecbd24f7.png" width="35%">
+
+
+S3: 
+
+<img src="https://user-images.githubusercontent.com/29614210/147156777-cc973599-506e-40fa-81ab-2ad2518b7c3c.png" width="35%">
+
+
+
+
+For more details of the process of training and evaluation please see our paper here!
 
 
 
