@@ -25,7 +25,7 @@ Also, for each scenario, we applied a feature selection process using Shapley va
 <img src="https://user-images.githubusercontent.com/29614210/147156639-70dee60a-7c9e-4888-9890-fa2458a97a95.png" alt="S1" width="30%"/> <img src="https://user-images.githubusercontent.com/29614210/147156716-a44f3e95-e628-4c9c-ab2e-d109ecbd24f7.png" width="30%"/> <img src="https://user-images.githubusercontent.com/29614210/147156777-cc973599-506e-40fa-81ab-2ad2518b7c3c.png" width="30%"/> 
 
 
-For more details of the process of training and evaluation please see our paper here!
+For more details of the training and the evaluation process please see our paper here!
 
 
 
@@ -48,7 +48,14 @@ Keras
 
 
 
- 2. To re-train the neural network with an actual observational data, change ... “path”s in __init__.py, for reading the data and training the neural network.
+ 2. To re-train the neural network with a different set of filters (e.g. filter sets of other instruments), change the path for reading the following tabels under '##read the preprocessed data' comment in __init__training.py:<br/>
+'y_data' as the target values<br/>
+'otherfeatures' the other parameters of the simulated SEDs that are not included in the training neither as input nor the target values<br/>
+'X_mags_cutoff' as the synthetic magnitudes from a set of filters of a desired instrument*.<br/>
+
+
+  *For producing synthetic magnitudes of our MOCASSIN SEDs with other photometric bandpass filters, download the corresponding transmission curves from [Spanish Virtual Observatory](http://svo2.cab.inta-csic.es/svo/theory/fps3/index.php?mode=browse&gname=JWST&asttype=) and upload them in Data->bands directory. Then follow the example code in "src->preprocessing" and change the JWST filters to the desired set of filters.
+
 
 
 ## Acknowledgement
