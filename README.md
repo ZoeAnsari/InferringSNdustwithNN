@@ -34,9 +34,11 @@ For more details of the training and the evaluation process please see our paper
 
 Keras
 
-[scikit-learn](https://scikit-learn.org/stable/)
+[Scikit-learn](https://scikit-learn.org/stable/)
 
 [MDN](https://github.com/ZoeAnsari/keras-mdn-layer)
+
+[Pyphot](https://mfouesneau.github.io/docs/pyphot/libcontent.html#)
 
 ## Usage
 
@@ -50,7 +52,7 @@ Keras
 
  2. To re-train the neural network with a different set of filters (e.g. filter sets of other instruments), change the path for reading the following tabels under '##read the preprocessed data' comment in __init__training.py:<br/>
 'y_data' as the target values<br/>
-'otherfeatures' the other parameters of the simulated SEDs that are not included in the training neither as input nor the target values<br/>
+'otherfeatures' the other parameters of the simulated SEDs that are not included in the training neither as inputs nor the target values<br/>
 'X_mags_cutoff' as the synthetic magnitudes from a set of filters of a desired instrument*.<br/>
 
 
