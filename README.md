@@ -62,4 +62,13 @@ Keras
 
 ## Acknowledgement
 
-I acknowledge Roger Wesson for providing the simulated MOCASSIN models, further detailed discussions, and always being helpful and supportive throughout the project. I also had great pleasure of working with Oswin Kruse, without whom I wouldn't be able to tackle the advanced statistical, and technical problems throughout the implementation and evaluation of the project. I would also like to extend my gratitude to Christa Gall, for her excellent guidance, and encouragement throughtout the project. 
+I acknowledge Roger Wesson for providing the simulated MOCASSIN models, further detailed discussions, and always being helpful and supportive throughout the project. I also had great pleasure of working with Oswin Kruse, without whom I wouldn't be able to tackle the advanced statistical, and technical problems throughout the implementation and evaluation of the project. I would also like to extend my gratitude to Christa Gall, for her excellent guidance, and encouragement throughtout the project.
+
+## Reference
+
+[Inferring supernova dust with neural networks]
+
+## Citation
+
+[Inferring supernova dust with neural networks]
+
