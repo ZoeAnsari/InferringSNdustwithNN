@@ -1,0 +1,17 @@
+autoPackets 0.20 2. 10000000
+output
+symmetricXYZ
+contShape  blackbody
+nebComposition noGas
+maxIterateMC 10 95.
+nPhotons 1e6
+nx 11
+ny 11
+nz 11
+LStar 558371.1102139909
+Rin 0
+Rout 8.889922278026466e+16
+TStellar 9873.936258851707
+dustFile 'input/grainspecies.dat' 'input/grainsize_0.010540724065979196.dat'
+Ndust file 'input/grid.txt'
+dustMass 0.02034274870029091
