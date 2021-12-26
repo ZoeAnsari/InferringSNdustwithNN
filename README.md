@@ -56,7 +56,7 @@ Keras
 'X_mags_cutoff' as the synthetic magnitudes from a set of filters of a desired instrument*.<br/>
 
 
-  *For producing synthetic magnitudes of our MOCASSIN SEDs with other photometric bandpass filters, download the corresponding transmission curves from [Spanish Virtual Observatory](http://svo2.cab.inta-csic.es/svo/theory/fps3/index.php?mode=browse&gname=JWST&asttype=) and upload them in Data->bands directory. Then follow the example code in "src->preprocessing" and change the JWST filters to the desired set of filters.
+  *For producing synthetic magnitudes of our MOCASSIN SEDs with other photometric bandpass filters, download the corresponding transmission curves from [Spanish Virtual Observatory](http://svo2.cab.inta-csic.es/svo/theory/fps3/index.php?mode=browse&gname=JWST&asttype=) and upload them in 'bands' directory. Then follow the example code in "__init__preprocessing_example.py" and change the JWST filters to your chosen set of filters. See [Pyphot](https://mfouesneau.github.io/docs/pyphot/) for more details!
 
 
 
