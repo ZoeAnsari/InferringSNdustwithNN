@@ -66,9 +66,9 @@ I acknowledge Roger Wesson for providing the simulated MOCASSIN models, further 
 
 ## Reference
 
-[Inferring supernova dust with neural networks]
+[Inferring properties of dust in supernovae with neural networks](https://www.aanda.org/articles/aa/full_html/2022/10/aa43078-22/aa43078-22.html)
 
 ## Citation
 
-[Inferring supernova dust with neural networks]
+[Inferring properties of dust in supernovae with neural networks](https://www.aanda.org/articles/aa/full_html/2022/10/aa43078-22/aa43078-22.html)
 
